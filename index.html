@@ -38,10 +38,10 @@
             <a class="button" href="">Contactar</a>
         </section>
         </div>
-        <main class="content sombra" >
+        <div class="content sombra" >
 
             <h2>Mis servicios</h2>
-            <div class="servicios">
+            <main class="servicios">
                 <div class="servicio">
                     <h3>Diseño web</h3>
                     <div class="icono">
@@ -92,37 +92,41 @@
                     
                     <p>Morbi consectetur urna a faucibus faucibus. Sed dictum enim eu nibh tempor auctor. </p>
                 </div>
-            </div>
-        </main>
+            </main>
+        
             <section>
                 <h2>Contacto</h2>
-                <form>
+                <form class="form">
                     <fieldset>
                         <legend>Contactame llenando todos los campos</legend>
-                        <div>
-                            <label>Nombre</label>
-                            <input type="text" placeholder="Nombre">
+                        <div class="field-container">
+                            <div class="field">
+                                <label>Nombre</label>
+                                <input class="input" type="text" placeholder="Nombre">
+                            </div>
+                            <div class="field">
+                                <label>Telefono</label>
+                                <input class="input" type="number" placeholder="Telefono">
+                            </div>
+                            <div class="field">
+                                <label>correo</label>
+                                <input class="input" type="email" placeholder="Email">
+                            </div>
+                            <div class="field">
+                                <label>Mensaje</label>
+                                <textarea class="input"></textarea>
+                            </div>
+                           
                         </div>
-                        <div>
-                            <label>Telefono</label>
-                            <input type="number" placeholder="Telefono">
-                        </div>
-                        <div>
-                            <label>correo</label>
-                            <input type="email" placeholder="Email">
-                        </div>
-                        <div>
-                            <label>Mensaje</label>
-                            <textarea></textarea>
-                        </div>
-                        <div>
-                            <input type="submit" value="enviar">
-                        </div>
+                            <div class="align-rigth flex">
+                                <input class="button w-100" type="submit" value="enviar">
+                            </div>
                     </fieldset>
                 </form>
             </section>
-            <footer>
-                <p>Todos los derechos reservados. Luis Palacio</p>
+        </div>
+            <footer class="footer">
+                <p>Todos los derechos reservados. Luis Enrique Palacio Arias</p>
             </footer>
     </body>
 </html>
